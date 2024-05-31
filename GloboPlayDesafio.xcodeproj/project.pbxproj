@@ -14,6 +14,8 @@
 		0E6A8D9C2C0A7B9C009D84F9 /* GloboPlayDesafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8D9B2C0A7B9C009D84F9 /* GloboPlayDesafioTests.swift */; };
 		0E6A8DA62C0A7B9C009D84F9 /* GloboPlayDesafioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DA52C0A7B9C009D84F9 /* GloboPlayDesafioUITests.swift */; };
 		0E6A8DA82C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DA72C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift */; };
+		0E6A8DBE2C0A7C9F009D84F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DBD2C0A7C9F009D84F9 /* HomeView.swift */; };
+		0E6A8DC12C0A7D1F009D84F9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DC02C0A7D1F009D84F9 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		0E6A8DA12C0A7B9C009D84F9 /* GloboPlayDesafioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GloboPlayDesafioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6A8DA52C0A7B9C009D84F9 /* GloboPlayDesafioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloboPlayDesafioUITests.swift; sourceTree = "<group>"; };
 		0E6A8DA72C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloboPlayDesafioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E6A8DBD2C0A7C9F009D84F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0E6A8DC02C0A7D1F009D84F9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,11 @@
 		0E6A8D892C0A7B9B009D84F9 /* GloboPlayDesafio */ = {
 			isa = PBXGroup;
 			children = (
+				0E6A8DB42C0A7BEB009D84F9 /* Models */,
+				0E6A8DB52C0A7BF3009D84F9 /* Networking */,
+				0E6A8DB82C0A7C06009D84F9 /* Screens */,
+				0E6A8DB72C0A7C01009D84F9 /* Services */,
+				0E6A8DB62C0A7BFA009D84F9 /* Views */,
 				0E6A8D8A2C0A7B9B009D84F9 /* GloboPlayDesafioApp.swift */,
 				0E6A8D8C2C0A7B9B009D84F9 /* ContentView.swift */,
 				0E6A8D8E2C0A7B9C009D84F9 /* Assets.xcassets */,
@@ -125,6 +134,59 @@
 				0E6A8DA72C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift */,
 			);
 			path = GloboPlayDesafioUITests;
+			sourceTree = "<group>";
+		};
+		0E6A8DB42C0A7BEB009D84F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E6A8DB52C0A7BF3009D84F9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0E6A8DB62C0A7BFA009D84F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E6A8DB72C0A7C01009D84F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0E6A8DB82C0A7C06009D84F9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0E6A8DBF2C0A7D04009D84F9 /* Favorites */,
+				0E6A8DBA2C0A7C64009D84F9 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0E6A8DBA2C0A7C64009D84F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E6A8DBD2C0A7C9F009D84F9 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E6A8DBF2C0A7D04009D84F9 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				0E6A8DC02C0A7D1F009D84F9 /* FavoritesView.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6A8DC12C0A7D1F009D84F9 /* FavoritesView.swift in Sources */,
+				0E6A8DBE2C0A7C9F009D84F9 /* HomeView.swift in Sources */,
 				0E6A8D8D2C0A7B9B009D84F9 /* ContentView.swift in Sources */,
 				0E6A8D8B2C0A7B9B009D84F9 /* GloboPlayDesafioApp.swift in Sources */,
 			);
