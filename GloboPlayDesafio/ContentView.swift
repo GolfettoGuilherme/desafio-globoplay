@@ -8,26 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isShowingSplash = true
+    
     var body: some View {
-        TabView {
-            NavigationStack {
-                HomeView()
+        ZStack {
+            if isShowingSplash {
+                SplashView()
+            } else {
+                MainNavigationView()
             }
-            .tabItem {
-                Label(
-                    title: { Text("Inicio") },
-                    icon: { Image(systemName: "house") }
-                )
-            }
-            
-            NavigationStack {
-                FavoritesView()
-            }
-            .tabItem { 
-                Label(
-                    title: { Text("Minha lista") },
-                    icon: { Image(systemName: "star.fill") }
-                )
+        }.onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.isShowingSplash = false
             }
         }
     }

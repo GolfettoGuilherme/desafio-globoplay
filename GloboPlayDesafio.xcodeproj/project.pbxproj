@@ -16,6 +16,8 @@
 		0E6A8DA82C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DA72C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift */; };
 		0E6A8DBE2C0A7C9F009D84F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DBD2C0A7C9F009D84F9 /* HomeView.swift */; };
 		0E6A8DC12C0A7D1F009D84F9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8DC02C0A7D1F009D84F9 /* FavoritesView.swift */; };
+		0E9EEE142C0AB11100C540D1 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9EEE132C0AB11100C540D1 /* SplashView.swift */; };
+		0E9EEE162C0AB3B400C540D1 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9EEE152C0AB3B400C540D1 /* MainNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0E6A8DA72C0A7B9C009D84F9 /* GloboPlayDesafioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloboPlayDesafioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0E6A8DBD2C0A7C9F009D84F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E6A8DC02C0A7D1F009D84F9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		0E9EEE132C0AB11100C540D1 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		0E9EEE152C0AB3B400C540D1 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		0E6A8DB62C0A7BFA009D84F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E9EEE152C0AB3B400C540D1 /* MainNavigationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 		0E6A8DB82C0A7C06009D84F9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0E9EEE122C0AB10000C540D1 /* Splash */,
 				0E6A8DBF2C0A7D04009D84F9 /* Favorites */,
 				0E6A8DBA2C0A7C64009D84F9 /* Home */,
 			);
@@ -187,6 +193,14 @@
 				0E6A8DC02C0A7D1F009D84F9 /* FavoritesView.swift */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		0E9EEE122C0AB10000C540D1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0E9EEE132C0AB11100C540D1 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6A8DC12C0A7D1F009D84F9 /* FavoritesView.swift in Sources */,
+				0E9EEE162C0AB3B400C540D1 /* MainNavigationView.swift in Sources */,
 				0E6A8DBE2C0A7C9F009D84F9 /* HomeView.swift in Sources */,
+				0E9EEE142C0AB11100C540D1 /* SplashView.swift in Sources */,
 				0E6A8D8D2C0A7B9B009D84F9 /* ContentView.swift in Sources */,
 				0E6A8D8B2C0A7B9B009D84F9 /* GloboPlayDesafioApp.swift in Sources */,
 			);
@@ -494,6 +510,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,6 +540,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
